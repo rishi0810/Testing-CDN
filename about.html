@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Editorial Typography</title>
+    <meta name="description" content="Learn more about editorial typography and data persistence">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Editorial</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="article.html">Article</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <article class="hero-section">
+            <div class="container">
+                <p class="overline">About This Project</p>
+                <h1 class="display-title">Data Persistence</h1>
+                <p class="lead-text">
+                    Understanding how information flows between pages in a multi-page application.
+                </p>
+            </div>
+        </article>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-card">
+                    <div class="welcome-message" id="welcomeMessage">
+                        <h2 class="greeting-title">Welcome!</h2>
+                        <p class="greeting-text">Please start from the home page to see personalized content.</p>
+                    </div>
+
+                    <div class="data-display" id="dataDisplay" style="display: none;">
+                        <h2 class="section-title">Your Information</h2>
+
+                        <div class="data-grid">
+                            <div class="data-item">
+                                <div class="data-label">Name (from URL)</div>
+                                <div class="data-value" id="displayName">—</div>
+                                <div class="data-source">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path
+                                            d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+                                            stroke="currentColor" stroke-width="1.5" />
+                                        <path d="M8 5V8L10 10" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    Query Parameter
+                                </div>
+                            </div>
+
+                            <div class="data-item">
+                                <div class="data-label">Favorite Topic (from Storage)</div>
+                                <div class="data-value" id="displayTopic">—</div>
+                                <div class="data-source">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <rect x="2" y="3" width="12" height="10" rx="1" stroke="currentColor"
+                                            stroke-width="1.5" />
+                                        <path d="M5 6H11M5 9H9" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    Session Storage
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="technical-details">
+                            <h3 class="details-title">Technical Implementation</h3>
+                            <div class="details-grid">
+                                <div class="detail-card">
+                                    <h4 class="detail-heading">URL Query Parameters</h4>
+                                    <p class="detail-text">
+                                        Parsed using <code>window.location.search</code> and
+                                        <code>URLSearchParams</code> API.
+                                        Visible in the browser address bar and shareable.
+                                    </p>
+                                    <div class="code-snippet" id="urlCode">
+                                        <code>?name=YourName</code>
+                                    </div>
+                                </div>
+
+                                <div class="detail-card">
+                                    <h4 class="detail-heading">Session Storage</h4>
+                                    <p class="detail-text">
+                                        Accessed via <code>sessionStorage.getItem()</code> and
+                                        <code>sessionStorage.setItem()</code>.
+                                        Persists only for the current browser session.
+                                    </p>
+                                    <div class="code-snippet">
+                                        <code>sessionStorage.getItem('topic')</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="article.html" class="btn-primary">
+                                Continue to Article
+                                <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a href="index.html" class="btn-secondary">Back to Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2025 Editorial Typography. A demonstration project.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/about.js"></script>
+</body>
+
+</html>

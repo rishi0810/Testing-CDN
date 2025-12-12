@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Editorial Typography</title>
+    <meta name="description" content="A multi-page editorial typography project demonstrating data passing between pages">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navigation">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Editorial</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="article.html">Article</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <article class="hero-section">
+            <div class="container">
+                <p class="overline">Welcome to</p>
+                <h1 class="display-title">Editorial Typography</h1>
+                <p class="lead-text">
+                    A demonstration of multi-page routing with elegant typography, 
+                    showcasing data persistence through query parameters and session storage.
+                </p>
+            </div>
+        </article>
+
+        <section class="form-section">
+            <div class="container">
+                <div class="form-card">
+                    <h2 class="section-title">Begin Your Journey</h2>
+                    <p class="section-description">
+                        Enter your details below. We'll pass your name via URL query parameters 
+                        and your favorite topic via session storage.
+                    </p>
+                    
+                    <form id="userForm" class="editorial-form">
+                        <div class="form-group">
+                            <label for="userName" class="form-label">Your Name</label>
+                            <input 
+                                type="text" 
+                                id="userName" 
+                                name="userName" 
+                                class="form-input" 
+                                placeholder="Enter your name"
+                                required
+                            >
+                            <span class="form-hint">This will be passed via URL query parameter</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="userTopic" class="form-label">Favorite Topic</label>
+                            <select id="userTopic" name="userTopic" class="form-input" required>
+                                <option value="">Select a topic</option>
+                                <option value="Design">Design</option>
+                                <option value="Technology">Technology</option>
+                                <option value="Literature">Literature</option>
+                                <option value="Photography">Photography</option>
+                                <option value="Architecture">Architecture</option>
+                            </select>
+                            <span class="form-hint">This will be stored in session storage</span>
+                        </div>
+
+                        <button type="submit" class="btn-primary">
+                            Continue to About
+                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-number">01</div>
+                        <h3 class="info-title">Query Parameters</h3>
+                        <p class="info-text">
+                            Data passed through URL using window.location for transparent, shareable state.
+                        </p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-number">02</div>
+                        <h3 class="info-title">Session Storage</h3>
+                        <p class="info-text">
+                            Browser-based storage API for maintaining state across page navigations.
+                        </p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-number">03</div>
+                        <h3 class="info-title">Editorial Design</h3>
+                        <p class="info-text">
+                            Classic typography principles with modern web aesthetics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2025 Editorial Typography. A demonstration project.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>

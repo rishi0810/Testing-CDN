@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article - Editorial Typography</title>
+    <meta name="description" content="An editorial article demonstrating typography and data persistence">
+    <link rel="stylesheet" href="styles/article.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Editorial</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="article.html" class="active">Article</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <article class="article-hero">
+            <div class="container">
+                <p class="article-category" id="articleCategory">Editorial</p>
+                <h1 class="article-title" id="articleTitle">The Art of Typography</h1>
+                <div class="article-meta">
+                    <span class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <circle cx="8" cy="5" r="2.5" stroke="currentColor" stroke-width="1.5" />
+                            <path d="M3 14C3 11.2386 5.23858 9 8 9C10.7614 9 13 11.2386 13 14" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                        <span id="authorName">Guest Reader</span>
+                    </span>
+                    <span class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect x="2" y="3" width="12" height="11" rx="1.5" stroke="currentColor"
+                                stroke-width="1.5" />
+                            <path d="M2 6H14M5 1.5V4.5M11 1.5V4.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg>
+                        December 12, 2025
+                    </span>
+                    <span class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5" />
+                            <path d="M8 5V8L10.5 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                        5 min read
+                    </span>
+                </div>
+            </div>
+        </article>
+
+        <section class="article-content">
+            <div class="container">
+                <div class="article-body">
+                    <p class="drop-cap">
+                        Typography is the art and technique of arranging type to make written language
+                        legible, readable, and appealing when displayed. The arrangement of type involves
+                        selecting typefaces, point sizes, line lengths, line-spacing, and letter-spacing,
+                        and adjusting the space between pairs of letters.
+                    </p>
+
+                    <h2>The Foundation of Design</h2>
+                    <p>
+                        In editorial design, typography serves as the backbone of visual communication.
+                        It's not merely about choosing beautiful fonts—it's about creating hierarchy,
+                        establishing rhythm, and guiding the reader's eye through the content with
+                        intentionality and grace.
+                    </p>
+
+                    <blockquote class="pullquote">
+                        "Typography is what language looks like."
+                        <cite>— Ellen Lupton</cite>
+                    </blockquote>
+
+                    <h2>Hierarchy and Structure</h2>
+                    <p>
+                        A well-designed typographic system creates clear visual hierarchy through the
+                        careful selection of font weights, sizes, and spacing. Display titles command
+                        attention, while body text invites sustained reading. Subheadings provide
+                        waypoints, and captions offer context.
+                    </p>
+
+                    <div class="highlight-box">
+                        <h3>Key Principles</h3>
+                        <ul class="principle-list">
+                            <li><strong>Contrast:</strong> Create distinction between different levels of information
+                            </li>
+                            <li><strong>Consistency:</strong> Maintain uniform styling throughout the design</li>
+                            <li><strong>Alignment:</strong> Establish visual connections between elements</li>
+                            <li><strong>Proximity:</strong> Group related items to create organization</li>
+                        </ul>
+                    </div>
+
+                    <h2>The Digital Evolution</h2>
+                    <p>
+                        Web typography has evolved dramatically since the early days of the internet.
+                        With web fonts, variable fonts, and advanced CSS capabilities, designers now
+                        have unprecedented control over how text appears across different devices and
+                        screen sizes.
+                    </p>
+
+                    <p>
+                        This project demonstrates how traditional editorial typography principles can
+                        be applied to modern web development, creating experiences that are both
+                        aesthetically pleasing and functionally robust.
+                    </p>
+
+                    <div class="personalized-message" id="personalizedMessage">
+                        <!-- Populated by JavaScript -->
+                    </div>
+
+                    <div class="article-footer">
+                        <div class="data-summary">
+                            <h3>Your Journey</h3>
+                            <p>Throughout this experience, we've demonstrated:</p>
+                            <ul class="summary-list">
+                                <li>
+                                    <strong>URL Query Parameters:</strong> Your name (<span id="footerName"
+                                        class="highlight-text">—</span>)
+                                    was passed through the URL
+                                </li>
+                                <li>
+                                    <strong>Session Storage:</strong> Your favorite topic (<span id="footerTopic"
+                                        class="highlight-text">—</span>)
+                                    was stored in the browser
+                                </li>
+                                <li>
+                                    <strong>Multi-page Routing:</strong> Seamless navigation between pages while
+                                    maintaining state
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="index.html" class="btn-primary">Start Over</a>
+                            <a href="about.html" class="btn-secondary">Back to About</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2025 Editorial Typography. A demonstration project.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/article.js"></script>
+</body>
+
+</html>

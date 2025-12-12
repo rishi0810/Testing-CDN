@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Editorial Typography</title>
-    <meta name="description" content="A multi-page editorial typography project demonstrating data passing between pages">
-    <link rel="stylesheet" href="styles/index.css">
+    <meta name="description"
+        content="A multi-page editorial typography project demonstrating data passing between pages">
+
+    <!-- DNS Prefetch and Preconnect for CDN -->
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+    <!-- Preconnect for Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rishi0810/Testing-CDN@main/styles/index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <nav class="navigation">
         <div class="nav-container">
@@ -28,7 +41,7 @@
                 <p class="overline">Welcome to</p>
                 <h1 class="display-title">Editorial Typography</h1>
                 <p class="lead-text">
-                    A demonstration of multi-page routing with elegant typography, 
+                    A demonstration of multi-page routing with elegant typography,
                     showcasing data persistence through query parameters and session storage.
                 </p>
             </div>
@@ -39,21 +52,15 @@
                 <div class="form-card">
                     <h2 class="section-title">Begin Your Journey</h2>
                     <p class="section-description">
-                        Enter your details below. We'll pass your name via URL query parameters 
+                        Enter your details below. We'll pass your name via URL query parameters
                         and your favorite topic via session storage.
                     </p>
-                    
+
                     <form id="userForm" class="editorial-form">
                         <div class="form-group">
                             <label for="userName" class="form-label">Your Name</label>
-                            <input 
-                                type="text" 
-                                id="userName" 
-                                name="userName" 
-                                class="form-input" 
-                                placeholder="Enter your name"
-                                required
-                            >
+                            <input type="text" id="userName" name="userName" class="form-input"
+                                placeholder="Enter your name" required>
                             <span class="form-hint">This will be passed via URL query parameter</span>
                         </div>
 
@@ -73,7 +80,8 @@
                         <button type="submit" class="btn-primary">
                             Continue to About
                             <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </button>
                     </form>
@@ -116,6 +124,7 @@
         </div>
     </footer>
 
-    <script src="scripts/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/rishi0810/Testing-CDN@main/scripts/index.js"></script>
 </body>
+
 </html>
